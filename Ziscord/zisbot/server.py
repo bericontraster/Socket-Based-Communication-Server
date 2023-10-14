@@ -1,8 +1,6 @@
 # Importing libs
 import socket
-import subprocess
-import sys
-from chatbot import response
+from core import response
 
 
 # Configuration
@@ -32,37 +30,32 @@ while connection:
     # Sending greeting to the client.
     connection_object.send(b"Welcome to Ziscord!")
     data_receive = connection_object.recv(LENGTH)
-    print("I RAN")
     connected = True
 
     while connected:
         print("{}: {}".format("[CLIENT]", data_receive.decode(FORMAT)))
-         # Closing the connection.
+        
+        # Closing the connection.
         if data_receive.decode(FORMAT) == "leave":
             try:
-                # print("T1")
                 server_response = "leaving"
                 connection_object.send(server_response.encode(FORMAT))
                 connection_object.close()
                 print(f"{connection_object} LEFT")
                 connected = False
             except:
-                # print("E1")
                 print(f"{connection_object} DISCONNECTED")
                 connected = False
         else:
             try:
-                # print("T2")
+                
                 # Keeping the connection alive.
-                # server_response = "WORKING!"
                 data_receive = data_receive.decode(FORMAT)
-                print(data_receive)
                 server_response = response(data_receive)
                 connection_object.send(server_response.encode(FORMAT))
                 print(f"[ZI$CORD] {server_response}")
                 data_receive = connection_object.recv(LENGTH)
             except:
-                # print("E2")
                 print(f"{connection_object} DISCONNECTED")
                 connection_object.close()
                 connected = False

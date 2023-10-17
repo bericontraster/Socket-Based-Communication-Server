@@ -26,11 +26,6 @@ def airesponse(message):
         return "I'm good how are you human?"
     elif message in ['create', 'made', 'created']:
         return "I was made by Aliens. I moved to earth recently."
-    elif message in ['fuck', 'fuck you', 'dick', 'suck', 'fuckk']:
-        randomNumber = random.randint(0,3)
-        randomNumber = int(randomNumber)
-        reponse = ['Take Control.', "That's what porn start would say", "Hold this D of mine.", "Humans Suck at everything."]
-        return reponse[randomNumber]
     elif message in ['feel bad', 'feel down', 'sorry', 'lose', 'die', 'sad']:
         return zisquote()
     else:

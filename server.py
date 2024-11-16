@@ -94,8 +94,6 @@ def ziscord():
     else:
         print("BEAST UN-PLUGGED.")
         return
-    # threading.Thread(target=powerOn, args=(powered,)).start()
     powerOn(powered)
-    # terminal = input("# ")
 
 ziscord()

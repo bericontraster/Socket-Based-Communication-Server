@@ -26,10 +26,10 @@ def airesponse(message):
         return "I'm good how are you human?"
     elif message in ['create', 'made', 'created']:
         return "I was made by Aliens. I moved to earth recently."
-    elif message in ['feel bad', 'feel down', 'sorry', 'lose', 'die', 'sad']:
+    elif message in ['What is qoute of the day?', 'qoute', 'motivate me']:
         return zisquote()
     else:
-        return "hope you're having a great day!"
+        return "Not included in if/else ;)"
 
 def poweron(message):
     return airesponse(message)

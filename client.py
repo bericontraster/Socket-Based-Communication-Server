@@ -2,8 +2,8 @@
 import socket
 
 # Configuration
-PORT = 8005
-IP_ADDR = '38.180.4.98'
+PORT = 5050
+IP_ADDR = '127.0.1.1'
 FORMAT = 'utf-8'
 LENGTH = 1024
 
@@ -27,7 +27,7 @@ while connection:
     print(data_receive.decode(FORMAT))
 
     while connected:
-        client_response = input("# ")
+        client_response = input("\n# ")
         client_instance.send(client_response.encode(FORMAT))
         data_receive = client_instance.recv(LENGTH)
 

@@ -57,16 +57,6 @@ def fetch(clientMessage):
     details = getInfo(countryName)
 
     if details == "Invalid syntax or country name.":
-        return "Invalid syntax or country name."
+        return "Invalid Syntax - fetch-countryname"
     else:
         return details
-
-
-
-# clientMessage = input("# ")
-# reponse = fetch(clientMessage)
-# print(reponse)
-
-
-# print(f"[REGION] - {countryDetails[0]}\n[POPULATION] - {countryDetails[1]}\n[CURRENCY] - {countryDetails[2]}")
-# print(f"[CAPITAL] - {countryDetails[3]}\n[TIMEZONE] - {countryDetails[4]}\n[WIKI] - {countryDetails[5]}")

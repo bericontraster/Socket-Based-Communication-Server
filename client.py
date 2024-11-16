@@ -3,7 +3,7 @@ import socket
 
 # Configuration
 PORT = 5050
-IP_ADDR = '127.0.1.1'
+IP_ADDR = '127.0.1.1' # Change me
 FORMAT = 'utf-8'
 LENGTH = 1024
 

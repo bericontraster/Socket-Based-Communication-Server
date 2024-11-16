@@ -2,7 +2,7 @@
 
 Welcome to "Socket-Based Communication Server". I created a small server using Python sockets for my home server. This is just the tip of the iceberg. I'm continuously working on this to make it bigger and more useful.
 
-Table of Conetens
+### Table of Contents
 - [Requirements](#requirements)
 - [Setup the Server](#setup-the-server)
 - [Server in Action](#server-in-action)
@@ -13,22 +13,22 @@ Table of Conetens
 
 ## Setup the Server
 
-Clone the github report to your system.
+Clone the github repo to your system.
 
 ```bash
-git clone https://github.com/bericontraster/Socket-Based-Communication-Server.git
+~$ git clone https://github.com/bericontraster/Socket-Based-Communication-Server.git
 ```  
   
 Installing the dependencies.  
    
 ```bash
-python3 -m venv virt
-source virt/bin/activate
-pip3 install -r requirements.txt
+~$ python3 -m venv virt
+~$ source virt/bin/activate
+~$ pip3 install -r requirements.txt
 ```
 
-Once everything is setup run the server using python3.
-
+Once everything is set run the server using Python3.
+  
 ```bash
 ~$ python3 server.py
 PRESS [ENTER] TO POWERON ZI$CORD
@@ -39,7 +39,7 @@ The server will power on and display the port and IP to which the client can con
 
 ## Server in Action
 
-While the server is running, connect to the server using client.
+While the server is running, connect to the server using the `client.py`.
 
 ![Server Connect](/img/server-connect.png)
 
@@ -50,3 +50,5 @@ Fetching Countries Information using API calls and displaying received json data
 Getting random qoute using [ZenQuotes](https://zenquotes.io/) API. i.e `qoute`
 
 ![Qoutes](/img/qoute.png)
+  
+> New and Bigger updates are comming very soon )
